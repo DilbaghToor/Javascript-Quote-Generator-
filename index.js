@@ -34,7 +34,10 @@ const quotes = [{
 }, {
     quote: `"The journey of a thousand miles begins with one step."`,
     person: `Lao Tzu`
-}, ];
+}, {
+    quote: '"You cannot change your future but you can change your habits and your habits will surely change your future"',
+    person: 'APJ Abdul Kalam'
+},];
 
 btn.addEventListener('click', function(){
     let random = Math.floor(Math.random() * quotes.length);
