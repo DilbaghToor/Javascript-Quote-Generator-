@@ -6,5 +6,4 @@ key concept used  --> document.getElementById()
                   --> if statements
                   --> inner Html
     
-    
-    ![stopwatchimg](https://github.com/DilbaghToor/Javascript-Quote-Generator-/assets/129930782/6615759a-f2f0-46cb-84c5-7cb27a9dca5e)
+![stopwatchimg](https://github.com/DilbaghToor/Javascript-Quote-Generator-/assets/129930782/a251ac0e-e2da-493f-a9d0-9f7ae3b30f68)
