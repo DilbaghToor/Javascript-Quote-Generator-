@@ -4,5 +4,6 @@ key concept of javascript used --> document.getElementByclassName()
                                --> for loop
                                --> this
                                --> classList.toggle()
-        ![imgmodal](https://github.com/DilbaghToor/Javascript-Quote-Generator-/assets/129930782/068a42b7-3819-4f40-9c1c-ff096af57b6f)
+ ![accordian](https://github.com/DilbaghToor/Javascript-Quote-Generator-/assets/129930782/763ff711-3e24-40b7-90a5-a908de85e2eb)
+
                        
