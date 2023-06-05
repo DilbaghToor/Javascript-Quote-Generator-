@@ -1,14 +1,29 @@
-let myObj2 = {
-    name : "diilbagh",
-    age : 23,
-    myFun2 : function(){
-        function myFn3(){
-             console.log(this)
-        }
+class Animal {
+//     sound() {
+//         console.log('Animals make diffrent sounds');
+//     }
+// }
 
-         myFn3();
+// class Dog {
+//     sound() {
+//         console.log('dogs barks');
+//     }
+// }
 
-    }
-}
+// class Cat {
+//     sound() {
+//         console.log('cat meauws')
+//     }
+// }
 
-myObj2.myFun2();
+// let animal1 = new Animal();
+
+// let tommy = new Dog();
+
+// let percy = new Cat();
+
+// animal1.sound();
+
+// tommy.sound();
+
+// percy.sound();
