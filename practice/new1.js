@@ -169,17 +169,17 @@
 
 // myObj.myFun1();
 
-let myObj2 = {
-    name : "diilbagh",
-    age : 23,
-    myFun2 : function(){
-        function myFn3(){
-             console.log(this)
-        }
+// let myObj2 = {
+//     name : "diilbagh",
+//     age : 23,
+//     myFun2 : function(){
+//         function myFn3(){
+//              console.log(this)
+//         }
 
-         myFn3();
+//          myFn3();
 
-    }
-}
+//     }
+// }
 
-myObj2.myFun2();
+// myObj2.myFun2();
