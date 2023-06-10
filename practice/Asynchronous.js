@@ -280,11 +280,169 @@
 //     p.catch(error => console.log(error.message))
 //     p.catch(error => console.log(error.message))
 
-const firstPromise = new Promise((res, rej) => {
-    setTimeout(res, 500, 'one');
-   });
+// const firstPromise = new Promise((res, rej) => {
+//     setTimeout(res, 500, 'one');
+//    });
    
-   const secondPromise = new Promise((res, rej) => {
-    setTimeout(res, 100, 'two');
-   });
-   Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
+//    const secondPromise = new Promise((res, rej) => {
+//     setTimeout(res, 100, 'two');
+//    });
+//    Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
+
+
+// Clousers
+
+// a function defined inside of a function will have access to its outer function scopes
+
+// function test(){
+    
+//     let age = 2;
+//     function test1(){
+//         console.log('my age ' + age);
+//         let name = 'dilbagh'
+
+//         function test2(){
+//             console.log('hi i am ' + name + ' and my age ' + age);
+//         }
+
+//         return test2;
+//     }
+
+//     return test1
+// }
+
+// let myfun = test()
+
+// // myfun()
+
+// let myfun2 = myfun()
+
+// myfun2()
+
+//shallow copy 
+
+//we have used spread operator {...}
+
+// let firstPerson = {
+//     name : 'dilbagh',
+//     age : '23'
+// };
+
+// let secondPerson = firstPerson;
+
+// firstPerson.name = 'Harman'
+
+// console.log(firstPerson);
+// console.log(secondPerson);
+
+//output { name: 'Harman', age: '23' }
+// { name: 'Harman', age: '23' }
+
+//we try to change firstperson value but secondperson value automaticly changed 
+
+//to avoid this use spread operator
+
+// let firstPerson = {
+//     name : 'dilbagh',
+//     age : '23'
+// };
+
+// let secondPerson = {...firstPerson};
+
+// firstPerson.name = 'Harman'
+
+// console.log(firstPerson);
+// console.log(secondPerson);
+
+// output
+// { name: 'Harman', age: '23' }
+// { name: 'dilbagh', age: '23' }
+//but it will not work if we have another object inside object  like
+
+// let firstPerson = {
+//     name : 'dilbagh',
+//     age : '23',
+//     address : {
+//         city : 'sangrur',
+//         state : 'punjab'
+//     }
+// };
+
+// secondPerson = {...firstPerson}
+
+// firstPerson.address.city = "sunam"
+
+// console.log(firstPerson)
+
+// console.log(secondPerson)
+
+// output {
+//   name: 'dilbagh',
+//   age: '23',
+//   address: { city: 'sunam', state: 'punjab' }
+// }
+// {
+//   name: 'dilbagh',
+//   age: '23',
+//   address: { city: 'sunam', state: 'punjab' }
+// }
+
+// we also have this problem solution with deep copy
+
+//Deep copy
+
+// let firstPerson = {
+//     name : 'dilbagh',
+//     age : '23',
+//     address : {
+//         city : 'sangrur',
+//         state : 'punjab'
+//     }
+// };
+
+// let secondPerson = JSON.parse(JSON.stringify(firstPerson))    //DEEP COPY
+
+// firstPerson.address.city = "sunam"
+
+// console.log(firstPerson)
+
+// console.log(secondPerson)
+
+
+//output
+// {
+//     name: 'dilbagh',
+//     age: '23',
+//     address: { city: 'sunam', state: 'punjab' }
+//   }
+//   {
+//     name: 'dilbagh',
+//     age: '23',
+//     address: { city: 'sangrur', state: 'punjab' }
+//   }
+
+// curring 
+// it is a function that takes one argument at a time and returns a new function expecting the next argument 
+
+//Non Curring
+// let sum = function(a,b,c){
+//     return a+b+c;
+// }
+
+// console.log(sum(5,5,5)) // 15
+
+// //Curring
+
+// let sum2 = function(a){
+
+//     return function(b){
+         
+//         return function(c){
+//             return a+b+c;
+//         }
+//     }
+// }
+
+// console.log(sum2(5)(5)(5)) // 15
+
+// changed sum(a,b,c) to sum(a)(b)(c)
