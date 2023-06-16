@@ -52,3 +52,25 @@ form button {
 
 } 
 
+::placeholder{
+    color : #ffffff;
+    font-size: 18px;
+}
+
+#show-more-btn {
+    background : #ff3929;
+    color : #ffff;
+    border : none;
+    outline : none;
+    padding : 10px 20px;
+    border-radius: 4px;
+    margin : 10px auto 100px;
+    display : block;
+    cursor: pointer;
+
+
+
+}
+
+
+
