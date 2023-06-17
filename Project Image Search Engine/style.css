@@ -67,6 +67,7 @@ form button {
     margin : 10px auto 100px;
     display : block;
     cursor: pointer;
+    display: none;
 
 
 
