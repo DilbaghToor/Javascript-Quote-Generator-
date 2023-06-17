@@ -23,7 +23,7 @@ form{
     background: #434989;
     display: flex;
     align-items: center;
-    border-radius: 40px;
+    border-radius: 10px;
     outline: none;
 
 }
@@ -45,10 +45,33 @@ form button {
     background: #ff3929;
     border : none;
     outline: none;
-    border-radius: 40px;
+    border-radius: 10px;
     color: #fff;
     font-size: 18px;
     cursor: pointer;
 
 } 
+
+::placeholder{
+    color : #ffffff;
+    font-size: 18px;
+}
+
+#show-more-btn {
+    background : #ff3929;
+    color : #ffff;
+    border : none;
+    outline : none;
+    padding : 10px 20px;
+    border-radius: 4px;
+    margin : 10px auto 100px;
+    display : block;
+    cursor: pointer;
+    display: none;
+
+
+
+}
+
+
 
