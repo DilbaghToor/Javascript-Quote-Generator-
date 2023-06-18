@@ -16,27 +16,31 @@ h1{
 }
 
 form{
-    width: 90%;
+    width: 85%;
     max-width: 600px;
-    margin: auto;
+    margin: 40px auto;
     height : 80px;
     background: #434989;
     display: flex;
     align-items: center;
     border-radius: 10px;
     outline: none;
+    display: flex;
+    justify-content: space-between;
 
 }
 
 form input {
-    flex : 1;
+    width: 80px;
     height : 100%;
     border: none;
     outline: none;
     background: transparent;
     color : #ffff;
     font-size: 18px;
-    padding : 0px 26px;
+    padding : 0px 5px;
+    margin: 10px;
+    
 }
 
 form button {
@@ -71,11 +75,11 @@ form button {
 }
 
 #search-result{
-    width: 80%;
+    width: 85%;
     margin: 100px auto 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 10px;
 
 }
 
@@ -86,6 +90,10 @@ form button {
     border-radius: 5px;
 }
 
+@media screen and (max-width: 500px) {
 
+
+    
+}
 
 
